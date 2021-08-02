@@ -1,3 +1,4 @@
+/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { ReactNode } from 'react'
 import Link from 'next/link'
 import Head from 'next/head'
@@ -33,7 +34,7 @@ const Layout = ({ children, title = 'This is the default title' }: Props) => (
     {children}
     <footer>
       <hr />
-      <span>I'm here to stay (Footer)</span>
+      <span>I<span>&apos;</span>m here to stay (Footer)</span>
     </footer>
   </div>
 )
