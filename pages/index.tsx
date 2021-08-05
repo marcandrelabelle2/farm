@@ -1,15 +1,19 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import React from "react";
 
-const IndexPage = () => (
-  <Layout title="Home | Next.js + TypeScript Example">
-    <h1>Hello Next.js 👋</h1>
-    <p>
-      <Link href="/about">
-        <a>About</a>
-      </Link>
-    </p>
-  </Layout>
-)
+import Head from "next/head";
 
-export default IndexPage
+import { getInitialLocale } from "../translations/getInitialLocale";
+
+const Index: React.FC = () => {
+  React.useEffect(() => {
+    window.location.replace(`/${getInitialLocale()}`);
+  });
+
+  return (
+    <Head>
+      <meta name="robots" content="noindex, nofollow" />
+    </Head>
+  );
+};
+
+export default Index;

@@ -1,18 +1,17 @@
-import React from 'react'
-import Link from 'next/link'
-
-import { User } from '../types'
+import React from "react";
+import { User } from "../types";
+import LocaleLink from "./LocaleLink";
 
 type Props = {
-  data: User
-}
+  data: User;
+};
 
 const ListItem = ({ data }: Props) => (
-  <Link href="/users/[id]" as={`/users/${data.id}`}>
+  <LocaleLink href={`/users/${encodeURIComponent(data.id)}`}>
     <a>
       {data.id}: {data.name}
     </a>
-  </Link>
-)
+  </LocaleLink>
+);
 
-export default ListItem
+export default ListItem;
