@@ -1,7 +1,8 @@
-const navbar = {
+const table = {
   navVeges: "Légumes",
   navTable: "Table champêtre",
-  navHist: "Notre Histore"
+  navHist: "Notre Histoore",
+  navContact: "Contactez-nous",
 };
 
-export default navbar;
+export default table;

@@ -1,4 +1,3 @@
-/* eslint-disable @next/next/no-html-link-for-pages */
 import React, { ReactNode } from "react";
 import Link from "next/link";
 import Head from "next/head";
@@ -11,9 +10,14 @@ import fr from "../locales/fr/navbar";
 type Props = {
   children?: ReactNode;
   title?: string;
+  description?: string;
 };
 
-const Layout = ({ children, title = "This is the default title" }: Props) => {
+const Layout = ({
+  children,
+  title = "Parcelles",
+  description = "Parcelles is a farm, a restaurant a vegetable supplyer country table.",
+}: Props) => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : fr;
@@ -28,30 +32,37 @@ const Layout = ({ children, title = "This is the default title" }: Props) => {
       <Head>
         <title>{title}</title>
         <meta charSet="utf-8" />
-        <meta name="viewport" content="initial-scale=1.0, width=device-width" />
+        <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
+        <meta name="robots" content="noindex"/>
+        <meta name="description" content={description}></meta>
       </Head>
       <header>
         <nav>
           <Link href="/">
             <a>
               <Image
-                src="/logo-parcelles.png"
                 alt="Logo of Parcelles"
+                src="/logo-parcelles.png"
                 height={50}
-                width={200}
+                width={260}
+                priority
               />
             </a>
           </Link>
-          <Link href="/">
+          <Link href="/veges">
             <a>{t.navVeges}</a>
           </Link>{" "}
           |{" "}
-          <Link href="/about">
+          <Link href="/table">
             <a>{t.navTable}</a>
           </Link>{" "}
           |{" "}
-          <Link href="/">
+          <Link href="/hist">
             <a>{t.navHist}</a>
+          </Link>{" "}
+          |{" "}
+          <Link href="/contact">
+            <a>{t.navContact}</a>
           </Link>{" "}
           |{" "}
           <select

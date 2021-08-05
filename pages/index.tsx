@@ -1,6 +1,5 @@
-import Link from "next/link";
-import Layout from "../components/Layout";
 import { useRouter } from "next/router";
+import Layout from "../components/Layout";
 
 import en from "../locales/en/home";
 import fr from "../locales/fr/home";
@@ -10,13 +9,27 @@ const IndexPage = () => {
   const { locale } = router;
   const t = locale === "en" ? en : fr;
   return (
-    <Layout title="Home | Next.js + TypeScript Example">
-      <h1>{t.hello}👋</h1>
-      <p>
-        <Link href="/about">
-          <a>About</a>
-        </Link>
-      </p>
+    <Layout
+      title="Farm landing page"
+      description="This is the landing page of the website.
+      It states diffent facts about animals, farming and nature's respect."
+    >
+      <h1>Parcelles</h1>
+      <h2>{t.project}</h2>
+      <p>{t.reservations}</p>
+      <p>{t.agriculture}</p>
+      <p>{t.fruitsveges}</p>
+      <p>{t.vegesinfo}</p>
+      <p>{t.chick}</p>
+      <p>{t.chickinfo}</p>
+      <p>{t.dog}</p>
+      <p>{t.doginfo}</p>
+      <p>{t.veges}</p>
+      <p>{t.order}</p>
+      <p>{t.table}</p>
+      <p>{t.tableinfo}</p>
+      <p>{t.hist}</p>
+      <p>{t.startup}</p>
     </Layout>
   );
 };
