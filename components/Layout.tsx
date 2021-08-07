@@ -33,7 +33,6 @@ const Layout = ({
         <title>{title}</title>
         <meta charSet="utf-8" />
         <meta name="viewport" content="initial-scale=1.0, width=device-width"/>
-        <meta name="robots" content="noindex"/>
         <meta name="description" content={description}></meta>
       </Head>
       <header>
@@ -43,8 +42,8 @@ const Layout = ({
               <Image
                 alt="Logo of Parcelles"
                 src="/logo-parcelles.png"
-                height={50}
-                width={260}
+                height={66}
+                width={249}
                 priority
               />
             </a>
