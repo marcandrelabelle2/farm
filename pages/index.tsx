@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 
-import en from "../locales/en/home";
-import fr from "../locales/fr/home";
+import en from "../locales/en/pages/home";
+import fr from "../locales/fr/pages/home";
 
 const IndexPage = () => {
   const router = useRouter();

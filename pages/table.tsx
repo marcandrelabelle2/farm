@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
-import en from "../locales/en/table";
-import fr from "../locales/fr/table";
+import en from "../locales/en/pages/table";
+import fr from "../locales/fr/pages/table";
 
 const TablePage = () => {
   const router = useRouter();

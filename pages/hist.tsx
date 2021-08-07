@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
-import en from "../locales/en/hist";
-import fr from "../locales/fr/hist";
+import en from "../locales/en/pages/hist";
+import fr from "../locales/fr/pages/hist";
 
 const HistoryPage = () => {
   const router = useRouter();

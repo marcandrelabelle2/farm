@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
-import en from "../locales/en/veges";
-import fr from "../locales/fr/veges";
+import en from "../locales/en/pages/veges";
+import fr from "../locales/fr/pages/veges";
 
 const VegesPage = () => {
   const router = useRouter();
