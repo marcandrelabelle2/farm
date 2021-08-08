@@ -10,7 +10,7 @@ const TablePage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-    title="Table"
+    title="Table Parcelles"
     description="Contry table presents our to our clients an idea of the menu.
                  It shows our fresh products and menu items pictures."
     >

@@ -10,7 +10,7 @@ const HistoryPage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="History"
+      title="History Parcelles"
       description="The story of the parcelles farm.
       It states how it all started, who's part of the journey."
     >

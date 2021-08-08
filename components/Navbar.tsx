@@ -20,21 +20,11 @@ const Navbar = () => {
 
   const [navbarOpen, setNavbarOpen] = React.useState(false);
   return (
-    <nav
-      className="bg-whitepure mb-3 relative flex flex-wrap
-                    justify-between px-2 py-3"
-    >
-      <div className="container px-4 mx-auto flex flex-wrap justify-between">
-        <div
-          className="w-full relative flex justify-between 
-                        lg:w-auto lg:static lg:block lg:justify-start"
-        >
+    <nav>
+      <div id="navbar-wrapper">
+        <div id="menu-bars">
           <Link href="/">
-            <a
-              className="border-green border-b-2 border-opacity-0 
-                         hover:border-opacity-100dark font-semibold
-                         hover:border-opacity-100"
-            >
+            <a className="nav-item">
               <Image
                 alt="Logo of Parcelles"
                 src="/logo-parcelles.png"
@@ -45,81 +35,46 @@ const Navbar = () => {
             </a>
           </Link>
           <button
-            className="text-black cursor-pointer text-xl leading-none border 
-                       border-solid border-transparent rounded bg-transparent 
-                       block lg:hidden outline-none focus:outline-none 
-                       px-5 py-1"
             type="button"
+            id="menu-toggle"
+            aria-label="Main menu"
             onClick={() => setNavbarOpen(!navbarOpen)}
           >
             <FontAwesomeIcon icon={faBars} />
           </button>
         </div>
         <div className={"lg:flex" + (navbarOpen ? " flex" : " hidden")}>
-          <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
-            <li
-              className="nav-item cursor-pointer border-green border-b-2 
-                           border-opacity-0 hover:border-opacity-100"
-            >
+          <ul>
+            <li className="nav-item">
               <Link href="/veges">
-                <a
-                  className="text-black flex font-semibold 
-                            hover:opacity-80 px-5 py-2 "
-                >
-                  {t.navVeges}
-                </a>
+                <a className="nav-link">{t.navVeges}</a>
               </Link>
             </li>
-            <li
-              className="nav-item cursor-pointer border-green border-b-2 
-                           border-opacity-0 hover:border-opacity-100"
-            >
+            <li className="nav-item">
               <Link href="/table">
-                <a
-                  className="text-black flex font-semibold 
-                            hover:opacity-80 px-5 py-2 "
-                >
-                  {t.navTable}
-                </a>
+                <a className="nav-link"> {t.navTable} </a>
               </Link>
             </li>
-            <li
-              className="nav-item cursor-pointer border-green border-b-2 
-                           border-opacity-0 hover:border-opacity-100"
-            >
+            <li className="nav-item">
               <Link href="/hist">
-                <a
-                  className="text-black flex font-semibold 
-                            hover:opacity-80 px-5 py-2 "
-                >
-                  {t.navHist}
-                </a>
+                <a className="nav-link">{t.navHist}</a>
               </Link>
             </li>
-            <li
-              className="nav-item cursor-pointer border-green border-b-2 
-                           border-opacity-0 hover:border-opacity-100"
-            >
+            <li className="nav-item">
               <Link href="/contact">
-                <a
-                  className="text-black flex font-semibold 
-                            hover:opacity-80 px-5 py-2 "
-                >
-                  {t.navContact}
-                </a>
+                <a className="nav-link">{t.navContact}</a>
               </Link>
             </li>
-            <li className="nav-item px-1 py-2">
+            <li className="nav-item">
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
-                className="text-black font-semibold 
-                           cursor-pointer hover:opacity-80"
+                className="nav-link text-center"
               >
-                <option className="text-black font-semibold" value="en">
+                <option className="nav-link" value="en">
                   EN
                 </option>
-                <option className="text-black font-semibold" value="fr">
+                <option className="nav-link" value="fr">
                   FR
                 </option>
               </select>

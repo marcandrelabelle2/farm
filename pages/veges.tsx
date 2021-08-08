@@ -10,7 +10,7 @@ const VegesPage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="Vegetables"
+      title="Vegetables Parcelles"
       description="The vegetables page presents our services to our clients.
                    It shows vegetables delivery for restaurants links
                    and greenhouse informations links."
