@@ -23,7 +23,7 @@ module.exports = {
       },
       fontSize: {
         default: 18,
-        navBar: 22,
+        navBar: 20,
         footerTitle: 16,
         footerText: 14,
       },

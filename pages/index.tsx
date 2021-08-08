@@ -10,7 +10,7 @@ const IndexPage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="Land"
+      title="Parcelles Land"
       description="This is the landing page of the website.
                    It states diffent facts about animals, farming and nature's
                    respect."
