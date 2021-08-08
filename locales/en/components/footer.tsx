@@ -1,5 +1,5 @@
 const footer = {
-  eastern: "Eastern Townships in your plates",
+  eastern: "Eastern Townships on your plates",
   offer: "Parcelles offers you a rustic table menu,\
           vegetables and unforgettable moments.",
   open: "Country table open on",

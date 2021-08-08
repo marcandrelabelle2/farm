@@ -10,9 +10,10 @@ const TablePage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="Contact page"
+      title="Contact"
       description="Page to contact members of the parcelles team.
-      You can find reservation, information and recruitment emails."
+                   You can find reservation, information and recruitment
+                   emails."
     >
       <h1>{t.reservation}</h1>
       <p>{t.info}</p>

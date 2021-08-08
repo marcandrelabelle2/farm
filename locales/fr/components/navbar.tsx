@@ -1,7 +1,7 @@
 const table = {
   navVeges: "Légumes",
   navTable: "Table champêtre",
-  navHist: "Notre Histoore",
+  navHist: "Notre Histoire",
   navContact: "Contactez-nous",
 };
 

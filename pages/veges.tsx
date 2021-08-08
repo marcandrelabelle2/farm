@@ -10,10 +10,10 @@ const VegesPage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="Vegetables page"
+      title="Vegetables"
       description="The vegetables page presents our services to our clients.
-      It shows vegetables delivery for restaurants links
-      and greenhouse informations links."
+                   It shows vegetables delivery for restaurants links
+                   and greenhouse informations links."
     >
       <h1>{t.delivery}</h1>
       <h2>{t.dlvinfo}</h2>

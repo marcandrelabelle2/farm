@@ -16,49 +16,58 @@ const Navbar = () => {
   };
 
   return (
-    <nav>
+    <nav className="bg-whitepure flex items-center justify-between flex-wrap p-3">
       <Link href="/">
-        <a>
+        <a className="border-greendark font-semibold  border-b-2 border-opacity-0
+                      hover:border-opacity-100">
           <Image
             alt="Logo of Parcelles"
             src="/logo-parcelles.png"
-            height={66}
-            width={249}
+            width={175}
+            height={45}
             priority
           />
         </a>
       </Link>
-      <ul>
-        <li>
+      <ul className="list-reset lg:flex justify-end flex-1 items-center">
+        <li className="mr-6">
           <Link href="/veges">
-            <a>{t.navVeges}</a>
+            <a className="border-greendark font-semibold  border-b-2 border-opacity-0  hover:border-opacity-100">
+              {t.navVeges}
+            </a>
           </Link>
         </li>
-        <li>
+        <li className="mr-6">
           <Link href="/table">
-            <a>{t.navTable}</a>
+            <a className="border-greendark font-semibold  border-b-2 border-opacity-0  hover:border-opacity-100">
+              {t.navTable}
+            </a>
           </Link>
         </li>
-        <li>
+        <li className="mr-6">
           <Link href="/hist">
-            <a>{t.navHist}</a>
+            <a className="border-greendark font-semibold  border-b-2 border-opacity-0  hover:border-opacity-100">
+              {t.navHist}
+            </a>
           </Link>
         </li>
-        <li>
+        <li className="mr-6">
           <Link href="/contact">
-            <a>{t.navContact}</a>
+            <a className="border-greendark font-semibold  border-b-2 border-opacity-0  hover:border-opacity-100">
+              {t.navContact}
+            </a>
           </Link>
         </li>
-        <li>
+        <li className="mr-6">
           <select
             onChange={changeLanguage}
             defaultValue={locale}
-            className="text-white text-shadow-sm text-lg bg-transparent tracking-wide"
+            className="text-black font-semibold"
           >
-            <option className="text-black" value="en">
+            <option className="text-black font-semibold" value="en">
               EN
             </option>
-            <option className="text-black" value="fr">
+            <option className="text-black font-semibold" value="fr">
               FR
             </option>
           </select>
