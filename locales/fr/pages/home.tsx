@@ -1,7 +1,7 @@
 const home = {
   project:
     "Un projet d'hospitalité agricole pique-nique dans le jardin, \
-  vins naturels, légumes cultivés et cuisinés sur place",
+     vins naturels, légumes cultivés et cuisinés sur place",
   reservations: "Réservez votre place!",
   agriculture: "Agriculture pratiqué en harmonie avec la nature",
   fruitsveges: "Fruits et légumes",
@@ -11,7 +11,7 @@ const home = {
   dog: "Chiens",
   doginfo:
     "Border collie en liberté pour protéger nos plantes, \
-  les chiens tenus en laisse sont les bienvenus s'ils se comportent bien",
+     les chiens tenus en laisse sont les bienvenus s'ils se comportent bien",
   veges: "Légumes",
   order: "Commendez nos produits locaux",
   table: "Table champêtre",

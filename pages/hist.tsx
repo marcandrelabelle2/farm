@@ -1,8 +1,8 @@
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
-import en from "../locales/en/hist";
-import fr from "../locales/fr/hist";
+import en from "../locales/en/pages/hist";
+import fr from "../locales/fr/pages/hist";
 
 const HistoryPage = () => {
   const router = useRouter();
@@ -10,7 +10,7 @@ const HistoryPage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="History page"
+      title="History Parcelles"
       description="The story of the parcelles farm.
       It states how it all started, who's part of the journey."
     >

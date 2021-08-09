@@ -1,8 +1,8 @@
 import { useRouter } from "next/router";
 import Layout from "../components/Layout";
 
-import en from "../locales/en/home";
-import fr from "../locales/fr/home";
+import en from "../locales/en/pages/home";
+import fr from "../locales/fr/pages/home";
 
 const IndexPage = () => {
   const router = useRouter();
@@ -10,9 +10,10 @@ const IndexPage = () => {
   const t = locale === "en" ? en : fr;
   return (
     <Layout
-      title="Farm landing page"
+      title="Parcelles Land"
       description="This is the landing page of the website.
-      It states diffent facts about animals, farming and nature's respect."
+                   It states diffent facts about animals, farming and nature's
+                   respect."
     >
       <h1>Parcelles</h1>
       <h2>{t.project}</h2>

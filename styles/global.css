@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Navbar */
+nav {
+  @apply bg-whitepure mb-3 relative flex flex-wrap justify-between px-2 py-3;
+}
+
+#navbar-wrapper {
+  @apply container px-4 mx-auto flex flex-wrap justify-between;
+}
+
+#menu-toggle {
+  @apply text-black cursor-pointer text-xl leading-none border border-solid
+         border-transparent rounded bg-transparent block lg:hidden
+         outline-none focus:outline-none px-5 py-1;
+}
+
+#menu-bars {
+  @apply w-full relative flex justify-between lg:w-auto
+          lg:static lg:block lg:justify-start;
+}
+
+nav ul {
+  @apply flex flex-col lg:flex-row list-none lg:ml-auto;
+}
+
+.nav-item {
+  @apply cursor-pointer border-green border-b-2
+         border-opacity-0 hover:border-opacity-60;
+}
+
+.nav-link {
+  @apply text-black flex font-semibold hover:opacity-75 px-5 py-2;
+}
+
+.active.nav-item {
+  @apply cursor-default border-opacity-100;
+}
+
+/* Footer */
+footer {
+  @apply bg-whitepure text-black p-5;
+}
+
+.foot-link {
+  @apply border-orange font-semibold border-opacity-0 hover:border-opacity-100;
+}
+
+footer p{
+  @apply text-footerText
+}
+
+footer h1{
+  @apply text-footerTitle font-semibold py-3
+}

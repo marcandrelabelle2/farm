@@ -1,7 +1,7 @@
 const home = {
   project:
     "You are welcome to enjoy a picnic in the fields with natural wines,\
-  vegetables harvested and cooked here",
+     vegetables harvested and cooked here",
   reservations: "Book your spot!",
   agriculture: "Agriculture caring about its place in nature",
   fruitsveges: "Fruits and vegetables",
@@ -10,7 +10,8 @@ const home = {
   chickinfo: "Laying hens out in the field",
   dog: "Dogs",
   doginfo:
-    "Border collie running free to protect our plants, dogs on a leash are welcome if they behave well",
+    "Border collie running free to protect our plants, \
+     dogs on a leash are welcome if they behave well",
   veges: "Vegetables",
   order: "Order our local products",
   table: "Country table",
