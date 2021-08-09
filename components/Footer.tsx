@@ -16,7 +16,7 @@ const Footer = () => {
         <a className="foot-link border-b-2">
           <Image
             alt="Logo of Parcelles orange"
-            src="/logo-parcelles-orange.png"
+            src="/images/logos/logo-parcelles-orange.png"
             width={112}
             height={30}
           />

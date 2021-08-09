@@ -1,10 +1,10 @@
 import React from "react";
-import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
+import ActiveLink from "./ActiveLink";
 import en from "../locales/en/components/navbar";
 import fr from "../locales/fr/components/navbar";
 
@@ -23,17 +23,17 @@ const Navbar = () => {
     <nav>
       <div id="navbar-wrapper">
         <div id="menu-bars">
-          <Link href="/">
+          <ActiveLink activeClassName="active" href="/">
             <a className="nav-item">
               <Image
                 alt="Logo of Parcelles"
-                src="/logo-parcelles.png"
+                src="/images/logos/logo-parcelles.png"
                 width={175}
                 height={45}
                 priority
               />
             </a>
-          </Link>
+          </ActiveLink>
           <button
             type="button"
             id="menu-toggle"
@@ -45,26 +45,26 @@ const Navbar = () => {
         </div>
         <div className={"lg:flex" + (navbarOpen ? " flex" : " hidden")}>
           <ul>
-            <li className="nav-item">
-              <Link href="/veges">
+            <ActiveLink activeClassName="active" href="/veges">
+              <li className="nav-item">
                 <a className="nav-link">{t.navVeges}</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/table">
+              </li>
+            </ActiveLink>
+            <ActiveLink activeClassName="active" href="/table">
+              <li className="nav-item">
                 <a className="nav-link"> {t.navTable} </a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/hist">
+              </li>
+            </ActiveLink>
+            <ActiveLink activeClassName="active" href="/hist">
+              <li className="nav-item">
                 <a className="nav-link">{t.navHist}</a>
-              </Link>
-            </li>
-            <li className="nav-item">
-              <Link href="/contact">
+              </li>
+            </ActiveLink>
+            <ActiveLink activeClassName="active" href="/contact">
+              <li className="nav-item">
                 <a className="nav-link">{t.navContact}</a>
-              </Link>
-            </li>
+              </li>
+            </ActiveLink>
             <li className="nav-item">
               <select
                 onChange={changeLanguage}

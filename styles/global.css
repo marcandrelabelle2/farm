@@ -28,11 +28,15 @@ nav ul {
 
 .nav-item {
   @apply cursor-pointer border-green border-b-2
-         border-opacity-0 hover:border-opacity-100;
+         border-opacity-0 hover:border-opacity-60;
 }
 
 .nav-link {
   @apply text-black flex font-semibold hover:opacity-75 px-5 py-2;
+}
+
+.active.nav-item {
+  @apply cursor-default border-opacity-100;
 }
 
 /* Footer */
