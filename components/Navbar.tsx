@@ -69,12 +69,12 @@ const Navbar = () => {
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
-                className="nav-link text-center"
+                className="nav-link cursor-pointer text-center"
               >
-                <option className="nav-link" value="en">
+                <option className="nav-link cursor-pointer" value="en">
                   EN
                 </option>
-                <option className="nav-link" value="fr">
+                <option className="nav-link cursor-pointer" value="fr">
                   FR
                 </option>
               </select>
