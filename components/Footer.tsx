@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
+import logo from "../public/images/logos/logo-parcelles-orange.png";
 import en from "../locales/en/components/footer";
 import fr from "../locales/fr/components/footer";
 
@@ -16,7 +17,7 @@ const Footer = () => {
         <a className="foot-link border-b-2">
           <Image
             alt="Logo of Parcelles orange"
-            src="/images/logos/logo-parcelles-orange.png"
+            src={logo}
             width={112}
             height={30}
           />
@@ -28,9 +29,7 @@ const Footer = () => {
           <p className="p-3">{t.offer}</p>
           <Link href="/contact">
             <a>
-              <p className="foot-link border-2 max-w-xs p-3">
-                {t.contact}
-              </p>
+              <p className="foot-link border-2 max-w-xs p-3">{t.contact}</p>
             </a>
           </Link>
         </div>

@@ -26,18 +26,19 @@ nav ul {
   @apply flex flex-col lg:flex-row list-none lg:ml-auto;
 }
 
-.nav-item {
-  @apply cursor-pointer border-green border-b-2
-         border-opacity-0 hover:border-opacity-60;
+.nav-item { 
+  @apply border-green cursor-pointer border-b-2 border-opacity-0
+         hover:opacity-75 hover:border-opacity-50;
 }
 
 .nav-link {
-  @apply text-black flex font-semibold hover:opacity-75 px-5 py-2;
+  @apply text-black flex font-semibold px-5 py-2;
 }
 
 .active.nav-item {
-  @apply cursor-default border-opacity-100;
+  @apply cursor-default border-opacity-100 hover:opacity-100;
 }
+
 
 /* Footer */
 footer {
