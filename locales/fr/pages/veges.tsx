@@ -7,7 +7,7 @@ const veges = {
   greenhouse: "Notre Serre",
   ghinfo:
     "Légumes cultivés dans une serre chauffée \
-     pour avoir des légumes pour prolongé la saison",
+     pour prolongé la saison des légumes",
   more: "Plus d'informations",
   quote:
     "Il pratique une culture sans pesticides \

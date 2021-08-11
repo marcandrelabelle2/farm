@@ -5,7 +5,9 @@ const table = {
     locaux en plus de ceux qui ont été cultivés sur place",
   reservbutton: "Réservez une place!",
   pizza: "Pizza champêtre",
-  pizzadesc: "Courgettes du jardins, fêta, pesto, persil",
+  pizzamenu: "Deux pizzas cuite au four à bois au menu",
+  pizzadesc: "Voici une pizza courgettes du jardins, fêta, \
+              pesto, persil venez goûter",
   moreinfo: "Plus de photos",
   quote:
     "Il pratique une culture sans pesticides \

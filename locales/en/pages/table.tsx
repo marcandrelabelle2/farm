@@ -5,7 +5,9 @@ const table = {
     are local in addition to those grown on site",
   reservbutton: "Book your place!",
   pizza: "Country pizza",
-  pizzadesc: "Garden zucchini, feta cheese, pesto, parsley",
+  pizzamenu: "Two oven baked pizza on the menu",
+  pizzadesc: "Here is one with garden zucchini, feta cheese, pesto, parsley \
+             come and taste it",
   moreinfo: "More pictures",
   quote: "Great food",
 };
