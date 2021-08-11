@@ -9,7 +9,7 @@ const veges = {
     "Légumes cultivés dans une serre chauffée \
      pour prolongé la saison des légumes",
   more: "Plus d'informations",
-  quote:
+  quote1:
     "Il pratique une culture sans pesticides \
      et fait pousser ses produits en gardant toujours en tête \
      qu’ils sont destinés à se retrouver dans une assiette",

@@ -28,7 +28,7 @@ const VegesPage = () => {
         </div>
         <div className="flex-1">
           <Image
-            alt="People enjoying food"
+            alt="Employee collecting baskets"
             src={basket}
             width={590}
             height={480}
@@ -46,15 +46,15 @@ const VegesPage = () => {
         </div>
         <div className="flex-1 md:pl-2">
           <Image
-            alt="Pizza menu example"
+            alt=""
             src={green}
-            width={558}
-            height={372}
+            width={590}
+            height={480}
             priority
           />
         </div>
       </section>
-      <p>{t.quote}</p>
+      <p>{t.quote1}</p>
     </Layout>
   );
 };

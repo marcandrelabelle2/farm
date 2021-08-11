@@ -9,7 +9,11 @@ const table = {
   pizzadesc: "Here is one with garden zucchini, feta cheese, pesto, parsley \
              come and taste it",
   moreinfo: "More pictures",
-  quote: "Great food",
+  quote1: "\"Wow! What an awesome experience!",
+  quote2: "The food is as spectacular as the setting.\"",
+  critic: "- Rod M.",
+  media:"Yelp",
+  urlmedia: "https://www.yelp.ca/biz/parcelles-magog",
 };
 
 export default table;
