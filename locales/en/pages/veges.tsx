@@ -9,7 +9,7 @@ const veges = {
   more: "More information",
   quote1: "\"Wow! What an awesome experience!",
   quote2: "The food is as spectacular as the setting.\"",
-  critic: "Rod M.",
+  critic: "- Rod M.",
   media:"Yelp",
   urlmedia: "https://www.yelp.ca/biz/parcelles-magog",
 };

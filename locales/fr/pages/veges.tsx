@@ -10,9 +10,12 @@ const veges = {
      pour prolongé la saison des légumes",
   more: "Plus d'informations",
   quote1:
-    "Il pratique une culture sans pesticides \
-     et fait pousser ses produits en gardant toujours en tête \
-     qu’ils sont destinés à se retrouver dans une assiette",
+    "\"Il pratique une culture sans pesticides \
+     et fait pousser ses produits en gardant toujours en tête",
+  quote2: "qu’ils sont destinés à se retrouver dans une assiette\"",
+  media: "Tastet",
+  critic: "- Marc-Antoine Ranger",
+  urlmedia: "https://tastet.ca/2021/06/27/parcelles/",
 };
 
 export default veges;

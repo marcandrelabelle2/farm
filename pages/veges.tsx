@@ -2,8 +2,11 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
+import rob from "../public/images/critic/rodm.png";
+import marc from "../public/images/critic/marc.png";
 import basket from "../public/images/veges/basket-collect-min.jpg";
 import green from "../public/images/veges/green-house-min.jpg";
+import radish from "../public/images/veges/radish-close-min.jpg";
 import en from "../locales/en/pages/veges";
 import fr from "../locales/fr/pages/veges";
 
@@ -11,6 +14,7 @@ const VegesPage = () => {
   const router = useRouter();
   const { locale } = router;
   const t = locale === "en" ? en : fr;
+  const critic = locale === "en" ? rob : marc;
   return (
     <Layout
       title="Vegetables Parcelles"
@@ -30,8 +34,9 @@ const VegesPage = () => {
           <Image
             alt="Employee collecting baskets"
             src={basket}
-            width={590}
-            height={480}
+            width={6240}
+            height={4160}
+            layout="responsive"
             priority
           />
         </div>
@@ -44,17 +49,33 @@ const VegesPage = () => {
             <button>{t.more}</button>
           </div>
         </div>
-        <div className="flex-1 md:pl-2">
+        <div className="flex-1">
           <Image
-            alt=""
+            alt="Greenhous image"
             src={green}
-            width={590}
-            height={480}
+            width={3130}
+            height={2075}
+            layout="responsive"
             priority
           />
         </div>
       </section>
-      <p>{t.quote1}</p>
+      <section className="critic">
+        <Image alt="A critic picture" src={critic} width={125} height={125} />
+        <h1>{t.quote1}</h1>
+        <h1>{t.quote2}</h1>
+        <p>{t.critic}</p>
+        <a href={t.urlmedia}>{t.media}</a>
+      </section>
+      <section>
+        <Image
+          alt="Knife and vegetables"
+          src={radish}
+          width={6240}
+          height={4160}
+          layout="responsive"
+        />
+      </section>
     </Layout>
   );
 };

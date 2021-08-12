@@ -15,5 +15,22 @@
 }
 
 .sbstext button {
-  @apply flex border border-black rounded-lg px-10 py-2 mx-auto uppercase md:mx-0;
+  @apply flex border border-black rounded-lg px-10 py-2 mx-auto uppercase 
+          hover:bg-black hover:text-white md:mx-0;
+}
+
+.critic {
+  @apply bg-greylight text-center p-5;
+}
+
+.critic h1 {
+  @apply text-lg italic md:text-2xl md:px-12;
+}
+
+.critic p {
+  @apply font-bold md:p-2;
+}
+
+.critic a {
+  @apply hover:underline hover:opacity-75 md:p-2;
 }

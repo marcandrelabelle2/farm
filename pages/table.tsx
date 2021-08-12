@@ -2,8 +2,8 @@ import Image from "next/image";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
-import rob from "../public/images/temp/rodm.png";
-import irisgp from "../public/images/temp/irisgp.png";
+import rob from "../public/images/critic/rodm.png";
+import irisgp from "../public/images/critic/irisgp.png";
 import food from "../public/images/table/food_plate-min.jpg";
 import pizza from "../public/images/table/pizza-min.jpg";
 import knife from "../public/images/table/knife_vegetables.jpg";
@@ -60,20 +60,12 @@ const TablePage = () => {
           />
         </div>
       </section>
-      <section className="bg-greylight text-center p-5">
-        <Image
-          className="object-cover items-center "
-          alt="toto"
-          src={critic}
-          width={125}
-          height={125}
-        />
-        <div className="text-center p-5">
-          <h1 className="text-lg md:text-2xl md:px-12">{t.quote1}</h1>
-          <h1 className="text-lg md:text-2xl md:px-12">{t.quote2}</h1>
-          <p className="text-md">{t.critic}</p>
-          <p className="text-md">{t.media}</p>
-        </div>
+      <section className="critic">
+        <Image alt="A critic round picture" src={critic} width={125} height={125} />
+        <h1>{t.quote1}</h1>
+        <h1>{t.quote2}</h1>
+        <p>{t.critic}</p>
+        <a href={t.urlmedia}>{t.media}</a>
       </section>
       <section>
         <Image

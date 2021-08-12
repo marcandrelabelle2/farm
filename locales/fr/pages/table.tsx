@@ -10,14 +10,13 @@ const table = {
     "Voici une pizza courgettes du jardins, fêta, \
     pesto, persil venez goûter",
   moreinfo: "Plus de photos",
-  urlintern:"../public/images/temp/irisgp.png",
   quote1:
     '"Celle aux courgettes, à la crème persil et citron\
       et au fromage La-Bête-à-Séguin',
   quote2: 'que nous avons goûtée était vraiment délicieuse"',
   critic: "- Iris Gagnon-Paradis",
   media: "La Presse",
-  urlmedia: "shorturl.at/stES5",
+  urlmedia: "tinyurl.com/4h8rnc58",
   //https://www.lapresse.ca/gourmand/restaurants/
   //2021-08-02/parcelles-nouvelle-table-champetre-des-cantons.php
 };
