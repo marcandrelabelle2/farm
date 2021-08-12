@@ -34,3 +34,15 @@
 .critic a {
   @apply hover:underline hover:opacity-75 md:p-2;
 }
+
+.hist {
+  @apply grid p-5 md:grid-cols-3;
+}
+
+.hist h1 {
+  @apply text-xl font-bold p-5 md:col-span-full md:text-4xl md:p-3;
+}
+
+.hist p {
+  @apply p-2;
+}
