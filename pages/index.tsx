@@ -1,6 +1,8 @@
-import { useRouter } from "next/router";
+import Image from "next/image";
 import Layout from "../components/Layout";
+import { useRouter } from "next/router";
 
+import logo from "../public/images/logos/logo-parcelles-white.png";
 import en from "../locales/en/pages/home";
 import fr from "../locales/fr/pages/home";
 
@@ -15,17 +17,28 @@ const IndexPage = () => {
                    It states diffent facts about animals, farming and nature's
                    respect."
     >
-      <h1>Parcelles</h1>
-      <h2>{t.project}</h2>
-      <p>{t.reservations}</p>
-      <p>{t.agriculture}</p>
-      <p>{t.fruitsveges}</p>
-      <p>{t.vegesinfo}</p>
-      <p>{t.chick}</p>
-      <p>{t.chickinfo}</p>
-      <p>{t.dog}</p>
-      <p>{t.doginfo}</p>
-      <p>{t.veges}</p>
+      <section className="homeimage">
+        <Image alt="Logo Parcelles white" src={logo} />
+        <div className="p-14">
+          <h1>{t.project}</h1>
+        </div>
+        <div className="pt-14">
+          <button>{t.reservations}</button>
+        </div>
+      </section>
+      <section className="homecard">
+        <h1 className="text-3xl">Venez voir</h1>
+        <div>
+          <h2>Agriculture</h2>
+          <p>{t.agriculture}</p>
+          <h2>{t.veges}</h2>
+          <p>{t.vegesinfo}</p>
+          <h2>{t.chick}</h2>
+          <p>{t.chickinfo}</p>
+          <h2>{t.dog}</h2>
+          <p>{t.doginfo}</p>
+        </div>
+      </section>
       <p>{t.order}</p>
       <p>{t.table}</p>
       <p>{t.tableinfo}</p>

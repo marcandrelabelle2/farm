@@ -1,7 +1,6 @@
 const home = {
   project:
-    "You are welcome to enjoy a picnic in the fields with natural wines,\
-     vegetables harvested and cooked here",
+    "Booking start at 8 a.m. the day before your reservation",
   reservations: "Book your spot!",
   agriculture: "Agriculture caring about its place in nature",
   fruitsveges: "Fruits and vegetables",

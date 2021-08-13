@@ -1,7 +1,6 @@
 const home = {
   project:
-    "Un projet d'hospitalité agricole pique-nique dans le jardin, \
-     vins naturels, légumes cultivés et cuisinés sur place",
+    "Les réservations commencent à 8 a.m. la veille de la date désirée",
   reservations: "Réservez votre place!",
   agriculture: "Agriculture pratiqué en harmonie avec la nature",
   fruitsveges: "Fruits et légumes",

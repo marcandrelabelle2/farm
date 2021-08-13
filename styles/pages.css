@@ -1,3 +1,35 @@
+.homeimage {
+  @apply bg-cover bg-home-logo h-screen w-full 
+         flex items-center justify-center flex-col;
+}
+
+.homeimage h1 {
+  @apply text-white bg-greendark text-center text-4xl 
+         max-w-md bg-opacity-70 p-2;
+}
+
+.homeimage button {
+  @apply text-black bg-orange border-black border-2 font-bold text-center
+           text-3xl rounded-2xl hover:bg-orangedark
+           hover:border-white hover:text-white p-6;
+}
+
+.homecard {
+  @apply flex flex-col items-center justify-center p-16;
+}
+
+.homecard h1 {
+  @apply text-3xl font-bold border-black border-b-2 p-2;
+}
+
+.homecard div {
+  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-1;
+}
+
+.homecard h2 {
+  @apply text-xl;
+}
+
 .sbsitem {
   @apply flex items-center justify-center flex-1 text-center md:text-left;
 }
