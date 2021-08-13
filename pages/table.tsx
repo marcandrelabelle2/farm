@@ -26,7 +26,11 @@ const TablePage = () => {
           <div className="sbstext">
             <h1>{t.realproduct}</h1>
             <p>{t.localingredients}</p>
-            <button>{t.reservbutton}</button>
+            <button>
+              <a href="https://resy.com/cities/ast/parcelles">
+                {t.reservbutton}
+              </a>
+            </button>
           </div>
         </div>
         <div className="flex-1">
@@ -46,7 +50,11 @@ const TablePage = () => {
             <h1>{t.pizza}</h1>
             <p>{t.pizzamenu}</p>
             <p>{t.pizzadesc}</p>
-            <button>{t.reservbutton}</button>
+            <button>
+              <a href="https://resy.com/cities/ast/parcelles">
+                {t.reservbutton}
+              </a>
+            </button>
           </div>
         </div>
         <div className="flex-1">
@@ -61,7 +69,12 @@ const TablePage = () => {
         </div>
       </section>
       <section className="critic">
-        <Image alt="A critic round picture" src={critic} width={125} height={125} />
+        <Image
+          alt="A critic round picture"
+          src={critic}
+          width={125}
+          height={125}
+        />
         <h1>{t.quote1}</h1>
         <h1>{t.quote2}</h1>
         <p>{t.critic}</p>

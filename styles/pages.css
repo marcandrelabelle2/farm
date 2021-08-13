@@ -1,3 +1,4 @@
+/* Homepage */
 .homeimage {
   @apply bg-cover bg-home-logo h-screen w-full 
          flex items-center justify-center flex-col;
@@ -46,6 +47,7 @@
   @apply cursor-pointer hover:opacity-75 p-2;
 }
 
+/* Vegetable + Table */
 .sbsitem {
   @apply flex items-center justify-center flex-1 text-center md:text-left;
 }
@@ -83,6 +85,8 @@
   @apply hover:underline hover:opacity-75 md:p-2;
 }
 
+
+/* History */
 .hist {
   @apply grid p-5 md:grid-cols-3;
 }

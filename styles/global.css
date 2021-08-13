@@ -4,7 +4,7 @@
 
 /* Navbar */
 nav {
-  @apply bg-whitepure mb-3 relative flex flex-wrap justify-between px-2 py-3;
+  @apply bg-whitepure relative flex flex-wrap justify-between px-2 py-3;
 }
 
 #navbar-wrapper {
@@ -26,7 +26,7 @@ nav ul {
   @apply flex flex-col lg:flex-row list-none lg:ml-auto;
 }
 
-.nav-item { 
+.nav-item {
   @apply border-green cursor-pointer border-b-2 border-opacity-0
          hover:opacity-75 hover:border-opacity-50;
 }
@@ -39,9 +39,21 @@ nav ul {
   @apply cursor-default border-opacity-100 hover:opacity-100;
 }
 
-
 /* Footer */
-footer {
+.socialfoot {
+  @apply bg-yellow items-center text-center;
+}
+
+.socialfoot h1 {
+  @apply text-footerTitle font-semibold pt-5;
+}
+
+.socialicon {
+  @apply text-4xl grid grid-cols-2 md:grid-cols-4 gap-12 p-5;
+}
+
+
+.hoursfoot {
   @apply bg-whitepure text-black p-5;
 }
 
@@ -49,10 +61,10 @@ footer {
   @apply border-orange font-semibold border-opacity-0 hover:border-opacity-100;
 }
 
-footer p{
-  @apply text-footerText
+footer p {
+  @apply text-footerText;
 }
 
-footer h1{
-  @apply text-footerTitle font-semibold py-3
+.hoursfoot h1 {
+  @apply text-footerTitle font-semibold py-3;
 }

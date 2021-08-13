@@ -5,17 +5,12 @@ const home = {
   come: "Venez nous voir",
   agriculture: "Agriculture pratiqué en harmonie avec la nature",
   fruitsveges: "Fruits et légumes",
+  veges: "Légumes",
   vegesinfo: "Récolté sur place et présent dans nos plats",
   chick: "Poules",
   chickinfo: "Poules pondeuses en plein champs",
   dog: "Chiens",
   doginfo: "Les chiens en laisse peuvent rencontrer notre border collie",
-  veges: "Légumes",
-  order: "Commendez nos produits locaux",
-  table: "Table champêtre",
-  tableinfo: "Voyez la qualité de nos plats",
-  hist: "Histoire",
-  startup: "Nous sommes encore une jeune pousse",
 };
 
 export default home;

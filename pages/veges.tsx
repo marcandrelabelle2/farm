@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import Layout from "../components/Layout";
 import { useRouter } from "next/router";
 
@@ -27,7 +28,9 @@ const VegesPage = () => {
           <div className="sbstext">
             <h1>{t.delivery}</h1>
             <p>{t.dlvinfo}</p>
-            <button>{t.delivbutton}</button>
+            <button>
+              <Link href="/contact">{t.delivbutton}</Link>
+            </button>
           </div>
         </div>
         <div className="flex-1">
@@ -46,7 +49,9 @@ const VegesPage = () => {
           <div className="sbstext">
             <h1>{t.greenhouse}</h1>
             <p>{t.ghinfo}</p>
-            <button>{t.more}</button>
+            <button>
+              <a href="https://www.instagram.com/parcelles.austin/">{t.more}</a>
+            </button>
           </div>
         </div>
         <div className="flex-1">

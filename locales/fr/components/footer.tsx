@@ -1,4 +1,5 @@
 const footer = {
+  follow: "Suivez-nous et partagez votre expérience",
   eastern: "Les cantons de l'est dans votre assiette",
   offer: "Parcelles vous propose un menu de table champêtre,\
           des légumes et des moments inoubliables.",

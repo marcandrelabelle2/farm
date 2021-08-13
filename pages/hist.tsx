@@ -27,17 +27,21 @@ const HistoryPage = () => {
         />
       </section>
       <section className="hist">
-        <h1>
-          {t.title}
-        </h1>
-          <p>{t.nature}</p>
-          <p>{t.hist}</p>
-          <p>{t.effort}</p>
-          <p className="md:col-start-1 md:col-span-full">{t.merci}</p>
-          <p className="md:col-start-1">{t.dominic}</p>
+        <h1>{t.title}</h1>
+        <p>{t.nature}</p>
+        <p>{t.hist}</p>
+        <p>{t.effort}</p>
+        <p className="md:col-start-1 md:col-span-full">{t.merci}</p>
+        <p className="md:col-start-1">{t.dominic}</p>
       </section>
       <section>
-        <Image alt="Chicken caring" src={chicken} width={6190} height={4127} />
+        <Image
+          alt="Chicken caring"
+          src={chicken}
+          width={6190}
+          height={4127}
+          layout="responsive"
+        />
       </section>
     </Layout>
   );

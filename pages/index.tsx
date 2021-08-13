@@ -31,7 +31,7 @@ const IndexPage = () => {
   const vegcrop = locale === "en" ? vegcropen : vegcropfr;
   return (
     <Layout
-      title="Parcelles Land"
+      title="Parcelles Landing Page"
       description="This is the landing page of the website.
                    It states diffent facts about animals, farming and nature's
                    respect."
@@ -50,7 +50,9 @@ const IndexPage = () => {
           <h1>{t.project}</h1>
         </div>
         <div className="pt-7 pb-2">
-          <button>{t.reservations}</button>
+          <button>
+            <a href="https://resy.com/cities/ast/parcelles">{t.reservations}</a>
+          </button>
         </div>
       </section>
       <section className="seeus">
@@ -138,11 +140,6 @@ const IndexPage = () => {
           </Link>
         </div>
       </section>
-      <p>{t.order}</p>
-      <p>{t.table}</p>
-      <p>{t.tableinfo}</p>
-      <p>{t.hist}</p>
-      <p>{t.startup}</p>
     </Layout>
   );
 };
