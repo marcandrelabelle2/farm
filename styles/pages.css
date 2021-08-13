@@ -14,20 +14,36 @@
            hover:border-white hover:text-white p-6;
 }
 
-.homecard {
-  @apply flex flex-col items-center justify-center p-16;
+.seeus {
+  @apply items-center justify-center text-center;
 }
 
-.homecard h1 {
-  @apply text-3xl font-bold border-black border-b-2 p-2;
+.seeus h1 {
+  @apply text-2xl font-bold underline pt-8;
 }
 
-.homecard div {
-  @apply grid grid-cols-1 gap-4 sm:grid-cols-2 md:grid-cols-4 md:grid-rows-1;
+.seeus h2 {
+  @apply font-bold pb-4;
 }
 
-.homecard h2 {
-  @apply text-xl;
+.seeus p {
+  @apply p-2;
+}
+
+.cardseeus {
+  @apply grid grid-cols-1 items-center justify-center text-center sm:grid-cols-2 md:grid-cols-4;
+}
+
+.cardseeus div {
+  @apply px-5;
+}
+
+.imglink {
+  @apply grid grid-cols-1 md:grid-cols-3 p-3;
+}
+
+.imglink div {
+  @apply cursor-pointer hover:opacity-75 p-2;
 }
 
 .sbsitem {
