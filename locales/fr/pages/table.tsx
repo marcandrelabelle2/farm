@@ -5,12 +5,20 @@ const table = {
     locaux en plus de ceux qui ont été cultivés sur place",
   reservbutton: "Réservez une place!",
   pizza: "Pizza champêtre",
-  pizzadesc: "Courgettes du jardins, fêta, pesto, persil",
+  pizzamenu: "Deux pizzas cuite au four à bois au menu",
+  pizzadesc:
+    "Voici une pizza courgettes du jardins, fêta, \
+    pesto, persil venez goûter",
   moreinfo: "Plus de photos",
-  quote:
-    "Il pratique une culture sans pesticides \
-    et fait pousser ses produits en gardant toujours en tête \
-    qu’ils sont destinés à se retrouver dans une assiette",
+  quote1:
+    '"Celle aux courgettes, à la crème persil et citron\
+      et au fromage La-Bête-à-Séguin',
+  quote2: 'que nous avons goûtée était vraiment délicieuse"',
+  critic: "- Iris Gagnon-Paradis",
+  media: "La Presse",
+  urlmedia: "tinyurl.com/4h8rnc58",
+  //https://www.lapresse.ca/gourmand/restaurants/
+  //2021-08-02/parcelles-nouvelle-table-champetre-des-cantons.php
 };
 
 export default table;

@@ -16,6 +16,7 @@ module.exports = {
         white: "#F0F0F0",
         whitepure: "#FFFFFF",
         orange: "#D99559",
+        orangedark: "#AA6427",
         yellow: "#F2E394",
         greenlight: "##24A142",
         green: "#1CA63F",
@@ -27,6 +28,9 @@ module.exports = {
         footerTitle: 16,
         footerText: 14,
       },
+      backgroundImage: theme => ({
+        'home-logo': "url('../public/images/index/carot-radish.jpg')"
+      })
     },
   },
   variants: {

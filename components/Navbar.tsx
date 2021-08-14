@@ -5,13 +5,14 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import ActiveLink from "./ActiveLink";
+import logo from "../public/images/logos/logo-parcelles.png";
 import en from "../locales/en/components/navbar";
 import fr from "../locales/fr/components/navbar";
 
 const Navbar = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "fr" ? fr : en;
 
   const changeLanguage = (e) => {
     const locale = e.target.value;
@@ -27,7 +28,7 @@ const Navbar = () => {
             <a className="nav-item">
               <Image
                 alt="Logo of Parcelles"
-                src="/images/logos/logo-parcelles.png"
+                src={logo}
                 width={175}
                 height={45}
                 priority
@@ -65,16 +66,16 @@ const Navbar = () => {
                 <a className="nav-link">{t.navContact}</a>
               </li>
             </ActiveLink>
-            <li className="nav-item">
+            <li>
               <select
                 onChange={changeLanguage}
                 defaultValue={locale}
-                className="nav-link text-center"
+                className="cursor-pointer text-center font-semibold py-3"
               >
-                <option className="nav-link" value="en">
+                <option className="cursor-pointer font-semibold" value="en">
                   EN
                 </option>
-                <option className="nav-link" value="fr">
+                <option className="cursor-pointer font-semibold" value="fr">
                   FR
                 </option>
               </select>

@@ -1,0 +1,100 @@
+/* Homepage */
+.homeimage {
+  @apply bg-cover bg-home-logo h-screen w-full 
+         flex items-center justify-center flex-col;
+}
+
+.homeimage h1 {
+  @apply text-white bg-greendark text-lg text-center font-bold
+         sm:text-2xl md:text-4xl max-w-md bg-opacity-70 p-2;
+}
+
+.homeimage button {
+  @apply text-black bg-orange border-black border-2 font-bold text-center
+           text-3xl rounded-2xl hover:bg-orangedark
+           hover:border-white hover:text-white p-6;
+}
+
+.seeus {
+  @apply items-center justify-center text-center;
+}
+
+.seeus h1 {
+  @apply text-2xl font-bold underline pt-8;
+}
+
+.seeus h2 {
+  @apply font-bold pb-4;
+}
+
+.seeus p {
+  @apply p-2;
+}
+
+.cardseeus {
+  @apply grid grid-cols-1 items-center justify-center text-center sm:grid-cols-2 md:grid-cols-4;
+}
+
+.cardseeus div {
+  @apply px-5;
+}
+
+.imglink {
+  @apply grid grid-cols-1 md:grid-cols-3 p-3;
+}
+
+.imglink div {
+  @apply cursor-pointer hover:opacity-75 p-2;
+}
+
+/* Vegetable + Table */
+.sbsitem {
+  @apply flex items-center justify-center flex-1 text-center md:text-left;
+}
+
+.sbstext {
+  @apply p-10 md:p-16 lg:px-20;
+}
+
+.sbstext h1 {
+  @apply mb-4 text-xl font-bold lg:text-2xl md:mb-8;
+}
+
+.sbstext p {
+  @apply mb-4 text-default lg:text-xl md:mb-6;
+}
+
+.sbstext button {
+  @apply flex border border-black rounded-lg px-10 py-2 mx-auto uppercase 
+          hover:bg-black hover:text-white md:mx-0;
+}
+
+.critic {
+  @apply bg-greylight text-center p-5;
+}
+
+.critic h1 {
+  @apply text-lg italic md:text-2xl md:px-12;
+}
+
+.critic p {
+  @apply font-bold md:p-2;
+}
+
+.critic a {
+  @apply hover:underline hover:opacity-75 md:p-2;
+}
+
+
+/* History */
+.hist {
+  @apply grid p-5 md:grid-cols-3;
+}
+
+.hist h1 {
+  @apply text-xl font-bold p-5 md:col-span-full md:text-4xl md:p-3;
+}
+
+.hist p {
+  @apply p-2;
+}
