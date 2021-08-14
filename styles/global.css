@@ -52,13 +52,16 @@ nav ul {
   @apply text-4xl grid grid-cols-2 md:grid-cols-4 gap-12 p-5;
 }
 
+.socialicon a {
+  @apply border-black border-b-2 border-opacity-0 hover:border-opacity-80;
+}
 
 .hoursfoot {
   @apply bg-whitepure text-black p-5;
 }
 
 .foot-link {
-  @apply border-orange font-semibold border-opacity-0 hover:border-opacity-100;
+  @apply border-orange font-semibold border-opacity-0 hover:border-opacity-80;
 }
 
 footer p {

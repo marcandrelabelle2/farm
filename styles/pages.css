@@ -61,7 +61,7 @@
 }
 
 .sbstext p {
-  @apply mb-4 lg:text-lg md:mb-6;
+  @apply mb-4 text-default lg:text-xl md:mb-6;
 }
 
 .sbstext button {
