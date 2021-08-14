@@ -11,7 +11,7 @@ import fr from "../locales/fr/pages/contact";
 const TablePage = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "fr" ? fr : en;
   return (
     <Layout
       title="Contact Parcelles"

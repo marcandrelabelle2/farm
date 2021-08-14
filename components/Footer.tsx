@@ -16,7 +16,7 @@ import fr from "../locales/fr/components/footer";
 const Footer = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "fr" ? fr : en;
 
   return (
     <footer>

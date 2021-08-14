@@ -13,8 +13,8 @@ import fr from "../locales/fr/pages/table";
 const TablePage = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
-  const critic = locale === "en" ? rob : irisgp;
+  const t = locale === "fr" ? fr : en;
+  const critic = locale === "fr" ? irisgp : rob;
   return (
     <Layout
       title="Table Parcelles"

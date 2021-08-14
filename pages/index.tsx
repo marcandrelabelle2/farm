@@ -25,10 +25,10 @@ import fr from "../locales/fr/pages/index";
 const IndexPage = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
-  const beef = locale === "en" ? beefen : beeffr;
-  const squash = locale === "en" ? squashen : squashfr;
-  const vegcrop = locale === "en" ? vegcropen : vegcropfr;
+  const t = locale === "fr" ? fr : en;
+  const beef = locale === "fr" ? beeffr : beefen;
+  const squash = locale === "fr" ? squashfr : squashen;
+  const vegcrop = locale === "fr" ? vegcropfr : vegcropen;
   return (
     <Layout
       title="Parcelles Landing Page"

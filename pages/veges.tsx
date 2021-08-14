@@ -14,8 +14,8 @@ import fr from "../locales/fr/pages/veges";
 const VegesPage = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
-  const critic = locale === "en" ? rob : marc;
+  const t = locale === "fr" ? fr : en;
+  const critic = locale === "fr" ? marc : rob;
   return (
     <Layout
       title="Vegetables Parcelles"

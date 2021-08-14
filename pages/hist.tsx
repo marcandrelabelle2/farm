@@ -10,7 +10,7 @@ import fr from "../locales/fr/pages/hist";
 const HistoryPage = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "fr" ? fr : en;
   return (
     <Layout
       title="History Parcelles"

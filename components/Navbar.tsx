@@ -12,7 +12,7 @@ import fr from "../locales/fr/components/navbar";
 const Navbar = () => {
   const router = useRouter();
   const { locale } = router;
-  const t = locale === "en" ? en : fr;
+  const t = locale === "fr" ? fr : en;
 
   const changeLanguage = (e) => {
     const locale = e.target.value;

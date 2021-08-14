@@ -5,8 +5,8 @@
 }
 
 .homeimage h1 {
-  @apply text-white bg-greendark text-center text-4xl 
-         max-w-md bg-opacity-70 p-2;
+  @apply text-white bg-greendark text-lg text-center font-bold
+         sm:text-2xl md:text-4xl max-w-md bg-opacity-70 p-2;
 }
 
 .homeimage button {
